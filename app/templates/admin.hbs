@@ -1,0 +1,35 @@
+<!-- app/templates/admin.hbs -->
+<div class="form-horizontal">
+    <div class="form-group" >
+        <label class="col-sm-2 control-label">Project Ttitle</label>
+        <div class="col-sm-10">
+          {{input type="text" value=projectTitle class="form-control" placeholder="The title of the project"}}
+          
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Project Text</label>
+        <div class="col-sm-10">
+          {{textarea  value=projectText class="form-control" placeholder="The project text"}}
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Project Image</label>
+        <div class="col-sm-10">
+          {{input type="text" value=projectImage class="form-control" placeholder="The project image as URL"}}
+     </div>
+          </div>
+           <div class="form-group">
+        <label class="col-sm-2 control-label">Project Type</label>
+        <div class="col-sm-10">
+          {{input type="text" value=type class="form-control" placeholder="The project type"}}
+     </div>
+          </div>
+
+<div class="form-group">
+      <button disabled={{isDisabled}} type="submit" class="btn btn-default" {{action 'addProject' model}}>Add to project list</button>
+     </div>
+
+
+
+</div>

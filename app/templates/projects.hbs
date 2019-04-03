@@ -1,0 +1,34 @@
+
+
+<div class="row">
+<div class="col-md-2 left-container">
+<h1 class="main-title">projects</h1>
+
+
+
+<div class="project-type-menu">
+<a class="pointy-head" {{action "changeProjectType" "development"}}>development</a> || <a class="pointy-head" {{action "changeProjectType" "design"}}>design</a>  </div>
+{{project-list projects=currentProjects didClickProjectLink=(action "didClickProjectLink")}}
+
+</div>
+  <div class="col-md-5">
+  </div>
+<div class="col-md-4 main-content">
+{{#if  currentProject}}
+{{project-detail project=currentProject}}
+{{else}}
+ <p class="increasedSizeText">
+
+ Robert has worked on a variety of projects, both as developer and as designer.  As a developer he was often lead developer.  In addition he served as creative director and project manager on all of the design projects, often overseeing remote backend developers and being responsible for integration of the back-end and front-end components of the sites.</p>
+
+{{/if}}
+
+  </div>
+
+  <div class="col-md-1">
+<!--
+  <img src="/assets/images/dragon.jpg"/>
+-->
+ </div>
+
+ </div>

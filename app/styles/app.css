@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans");
+@import url("https://fonts.googleapis.com/css?family=Abel");
+@import url("https://fonts.googleapis.com/css?family=Lekton");
+body {
+  padding-top: 20px; }
+
+.row img {
+  max-width: 100%; }
+
+.projectImage {
+  max-width: 80%; }
+
+.project-box {
+  padding-bottom: 20px;
+  border: solid 1px darkgrey;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.increasedSizeText {
+  font-size: 1.2em;
+  color: red; }
+
+.pointy, a {
+  text-decoration: none;
+  text-size: 1.2em;
+  cursor: pointer;
+  margin-bottom: 4px;
+  display: inline-block;
+  color: darkolivegreen; }
+  .pointy:hover, .pointy:visited, .pointy:active, a:hover, a:visited, a:active {
+    color: chocolate;
+    text-decoration: none; }
+
+.pointy-head {
+  text-decoration: none;
+  cursor: pointer;
+  margin-bottom: 6px;
+  text-size: 1.6em;
+  display: inline-block;
+  color: darkslategrey; }
+  .pointy-head:hover, .pointy-head:visited, .pointy-head:active {
+    color: chocolate;
+    text-decoration: none; }
+
+.submenu {
+  padding-bottom: 20px; }
+
+.project-type-menu, .project-type-menu + div {
+  margin-bottom: 15px; }
+  .project-type-menu a, .project-type-menu + div a {
+    font-size: 1.2em; }
+
+.main-content {
+  font-size: 1.2em;
+  color: red;
+  background: gre; }
+
+.main-content-index {
+  font-size: 1.5em;
+  color: red;
+  color: red;
+  background: white; }
+
+.main-title, .project-type-menu, .project-type-menu + div {
+  position: relative;
+  padding-left: 10px;
+  color: red;
+  background: white; }
+
+.left-container {
+  padding: 0;
+  margin: 0;
+  margin-left: 15px;
+  color: red;
+  background: white; }
+
+.project-type-menu + div, .project-type-menu + div + div {
+  background: white; }
+
+h1.main-title {
+  padding: 5px;
+  padding-left: 10px;
+  margin: 0;
+  border: 0; }
+
+.nav a {
+  font-size: 1.2em; }
+
+.navbar-brand {
+  font-size: 1.5em; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Abel', sans-serif; }
+
+p, div {
+  font-family: 'Abel', sans-serif; }
+
+.main-outlet {
+  padding-top: 30px; }
+
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100; }
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+@media (min-aspect-ratio: 16 / 9) {
+  .fullscreen-bg__video {
+    height: 300%;
+    top: -100%; } }
+@media (max-aspect-ratio: 16 / 9) {
+  .fullscreen-bg__video {
+    width: 300%;
+    left: -100%; } }
+@media (max-width: 767px) {
+  .fullscreen-bg {
+    background: url("assets/images/freezeframe.png") center center/cover no-repeat; }
+
+  .fullscreen-bg__video {
+    display: none; } }
+/* navbar */
+.navbar-default {
+  background-color: #F8F8F8;
+  border-color: #E7E7E7; }
+
+/* Title */
+.navbar-default .navbar-brand {
+  color: red; }
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #5E5E5E; }
+
+/* Link */
+.navbar-default .navbar-nav > li > a {
+  color: red; }
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #333; }
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #555;
+  background-color: #E7E7E7; }
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #555;
+  background-color: #D5D5D5; }
+
+/* Caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+  border-top-color: red;
+  border-bottom-color: red; }
+
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+  border-top-color: #333;
+  border-bottom-color: #333; }
+
+.navbar-default .navbar-nav > .open > a .caret,
+.navbar-default .navbar-nav > .open > a:hover .caret,
+.navbar-default .navbar-nav > .open > a:focus .caret {
+  border-top-color: #555;
+  border-bottom-color: #555; }
+
+/* Mobile version */
+.navbar-default .navbar-toggle {
+  border-color: #DDD; }
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #DDD; }
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #CCC; }
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: red; }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #333; } }
+
+/*# sourceMappingURL=app.css.map */

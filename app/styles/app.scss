@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans");
+@import url("https://fonts.googleapis.com/css?family=Abel");
+@import url("https://fonts.googleapis.com/css?family=Lekton");
+
+$textColor: red;
+$headingColor:darkslateblue;
+$linkColor: darkolivegreen;
+$headLinkColor: darkslategrey;
+$linkRollColor: chocolate;
+$maincontent-background-colour:  rgba(256,256,256,1);
+
+
+
+.panel-title a {
+
+}
+
+body {
+  padding-top: 20px;
+
+}
+
+.row img {
+	max-width:100%;
+}
+
+.projectImage {
+	max-width: 80%;
+}
+
+.project-box {
+	padding-bottom:20px;
+	border: solid 1px darkgrey;
+  margin:0;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.increasedSizeText {
+	font-size: 1.2em;
+	color: $textColor;
+}
+
+.pointy, a {
+	text-decoration:none;
+
+	text-size:1.2em;
+	cursor:pointer;
+		margin-bottom:4px;
+	display:inline-block;
+	color: $linkColor;
+	&:hover, &:visited, &:active {
+	color:$linkRollColor;
+	text-decoration:none;
+	}
+}
+
+.pointy-head {
+	text-decoration:none;
+
+	cursor:pointer;
+	margin-bottom:6px;
+		text-size:1.6em;
+	display:inline-block;
+
+	color: $headLinkColor;
+	&:hover, &:visited, &:active {
+	color:$linkRollColor;
+	text-decoration:none;
+	}
+}
+
+.submenu {
+	padding-bottom:20px;
+}
+
+.project-type-menu {
+	margin-bottom:15px;
+	a {
+	font-size: 1.2em;
+	}
+}
+
+
+
+.main-content {
+	font-size:1.2em;
+	color:$textColor;
+  background:$maincontent-background-colour
+}
+.main-content-index {
+  font-size:1.5em;
+  color:$textColor;
+  color:$textColor;
+  background:$maincontent-background-colour
+}
+
+.main-title,.project-type-menu {
+  position:relative;
+  padding-left:10px;
+  color:$textColor;
+  background:$maincontent-background-colour;
+
+}
+
+.left-container {
+padding:0;
+  margin:0;
+  margin-left:15px;
+  color:$textColor;
+  background:$maincontent-background-colour;
+}
+
+.project-type-menu+div {
+  @extend .project-type-menu;
+  background:$maincontent-background-colour;
+}
+h1.main-title {
+  padding:5px;
+  padding-left:10px;
+margin:0;
+  border:0;
+}
+
+.nav a {font-size: 1.2em}
+
+.navbar-brand {font-size:1.5em}
+
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Abel', sans-serif;
+
+}
+p, div {
+font-family: 'Abel', sans-serif;
+}
+
+.main-outlet {
+	padding-top:30px;
+}
+
+
+
+
+
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .fullscreen-bg {
+    background: url('assets/images/freezeframe.png') center center / cover no-repeat;
+  }
+
+  .fullscreen-bg__video {
+    display: none;
+  }
+}
+
+
+
+
+
+$navbar-background:#F8F8F8;
+$navbar-border:#E7E7E7;
+$navbar-text: red;
+$navbar-hover: #555;
+
+/* navbar */
+.navbar-default {
+  background-color: #F8F8F8;
+  border-color: #E7E7E7;
+}
+/* Title */
+.navbar-default .navbar-brand {
+  color:$navbar-text;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #5E5E5E;
+}
+/* Link */
+.navbar-default .navbar-nav > li > a {
+  color:$navbar-text;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #333;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #555;
+  background-color: #E7E7E7;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #555;
+  background-color: #D5D5D5;
+}
+/* Caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+  border-top-color:$navbar-text;
+  border-bottom-color:$navbar-text;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+  border-top-color: #333;
+  border-bottom-color: #333;
+}
+.navbar-default .navbar-nav > .open > a .caret,
+.navbar-default .navbar-nav > .open > a:hover .caret,
+.navbar-default .navbar-nav > .open > a:focus .caret {
+  border-top-color: #555;
+  border-bottom-color: #555;
+}
+/* Mobile version */
+.navbar-default .navbar-toggle {
+  border-color: #DDD;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #DDD;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #CCC;
+}
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color:$navbar-text;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #333;
+  }
+}
